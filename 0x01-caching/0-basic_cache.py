@@ -1,26 +1,19 @@
 #!/usr/bin/python3
-"""
-BasicCache module
-"""
+''' self descriptive code '''
 
 BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """ BasicCache defines:
-      - Inherits from BaseCaching
-      - Caching system
-    """
+    ''' self descriptive '''
 
     def put(self, key, item):
-        """ Add an item in the cache
-        """
+        ''' self descriptive '''
         if key and item:
             self.cache_data[key] = item
 
     def get(self, key):
-        """ Get an item by key
-        """
+        ''' self descriptive '''
         if key in self.cache_data:
             return self.cache_data[key]
         return None
